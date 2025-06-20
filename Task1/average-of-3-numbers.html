@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Average of 3 Numbers Using Functions</title>
+</head>
+
+<body>
+    <script>
+        // with parameters and with return value
+        function average1(number1, number2, number3) {
+            var avg = (number1 + number2 + number3) / 3
+            return avg
+        }
+
+        // without parameters and with return value
+        function average2() {
+            var number1 = 12, number2 = 22, number3 = 15
+            avg = (number1 + number2 + number3) / 3
+            return avg
+        }
+
+        // with parameters and without return value
+        function average3(number1, number2, number3) {
+            var avg = (number1 + number2 + number3) / 3
+            alert(avg)
+        }
+
+        // without parameters and without return value
+        function average4() {
+            var number1 = 15, number2 = 25, number3 = 16,
+                avg = (number1 + number2 + number3) / 3
+            alert(avg)
+        }
+
+        var a1 = average1(10, 30, 40)
+        alert(a1)
+        var a2 = average2()
+        alert(a2)
+        average3(11, 34, 46)
+        average4()
+
+    </script>
+</body>
+
+</html>

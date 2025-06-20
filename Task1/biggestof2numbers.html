@@ -7,18 +7,41 @@
 
 <body>
     <script>
-        function Biggestof2numbers(number1, number2) {
-            if (number1 > number2) { //or Math.max(number1,number2)
-                alert("The Biggest Number is:" + number1)
-            }
-            else {
-                alert("The Biggest Number is:" + number2)
-            }
+        //with parameters and with return value
+        function biggestOfTwoNumbers1(number1, number2) {
+            var biggest = (number1 > number2) ? number1 : number2;
+            return biggest
         }
-        Biggestof2numbers(3, 2)
-        Biggestof2numbers(10, 7)
-    </script>
 
+        //without parameters and with return value
+        function biggestOfTwoNumbers2() {
+            var number1 = 34, number2 = 12, biggest
+            biggest = (number1 > number2) ? number1 : number2;
+            return biggest
+        }
+
+        //with parameters and without return value
+        function biggestOfTwoNumbers3(number1, number2) {
+            var biggest = (number1 > number2) ? number1 : number2;
+            alert(biggest)
+        }
+
+        //without parameters and without return value
+        function biggestOfTwoNumbers4() {
+            var number1 = 10, number2 = 12, biggest
+            biggest = (number1 > number2) ? number1 : number2;
+            alert(biggest)
+        }
+
+        var b1 = biggestOfTwoNumbers1(3, 2)
+        alert(b1)
+        var b2 = biggestOfTwoNumbers2()
+        alert(b2)
+        biggestOfTwoNumbers3(7, 6)
+        biggestOfTwoNumbers4()
+
+    </script>
+    
 </body>
 
 </html>

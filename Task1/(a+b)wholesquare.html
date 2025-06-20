@@ -7,15 +7,38 @@
 
 <body>
     <script>
-        function AplusBWholeSquare(a, b) {
-            var aplusbwholesquare;
-            aplusbwholesquare = (a + b) ** 2;
-
-            //or a**2+b**2+2*a*b or Math.pow((a+b),2)
-
-            alert(aplusbwholesquare)
+        // with parameters and with return value
+        function aPlusBWholeSquare1(a, b) {
+            var wholeSquare = a * a + b * b + 2 * a * b;
+            return wholeSquare
         }
-        AplusBWholeSquare(2, 3)
+
+        // without parameters and with return value
+        function aPlusBWholeSquare2() {
+            var a = 4, b = 2, wholeSquare
+            wholeSquare = a * a + b * b + 2 * a * b;
+            return wholeSquare
+        }
+
+        // with parameters and without return value
+        function aPlusBWholeSquare3(a, b) {
+            var wholeSquare = a * a + b * b + 2 * a * b;
+            alert(wholeSquare)
+        }
+
+        // without parameters and without return value
+        function aPlusBWholeSquare4() {
+            var a = 2.3, b = 4, wholeSquare
+            wholeSquare = a * a + b * b + 2 * a * b;
+            alert(wholeSquare)
+        }
+
+        var ws1 = aPlusBWholeSquare1(2, 3)
+        alert(ws1)
+        var ws2 = aPlusBWholeSquare2()
+        alert(ws2)
+        aPlusBWholeSquare3(5, 6)
+        aPlusBWholeSquare4()
 
     </script>
 </body>

@@ -7,14 +7,39 @@
 
 <body>
     <script>
-        function Average(number1, number2, number3, number4, number5, number6) {
-            var sum, average;
-            sum = number1 + number2 + number3 + number4 + number5 + number6
-            average = sum / 6
-            alert(average)
+        // with parameters and with return value
+        function average1(number1, number2, number3, number4, number5, number6) {
+            var avg = (number1 + number2 + number3 + number4 + number5 + number6) / 6
+            return avg
         }
-        Average(10, 30, 40, 20, 33, 42)
-        Average(11, 34, 46, 22, 39, 46)
+
+        // without parameters and with return value
+        function average2() {
+            var number1 = 12, number2 = 22, number3 = 15, number4 = 22, number5 = 13, number6 = 34
+            avg = (number1 + number2 + number3 + number4 + number5 + number6) / 6
+            return avg
+        }
+
+        // with parameters and without return value
+        function average3(number1, number2, number3, number4, number5, number6) {
+            var avg = (number1 + number2 + number3 + number4 + number5 + number6) / 6
+            alert(avg)
+        }
+        
+        // without parameters and without return value
+        function average4() {
+            var number1 = 15, number2 = 25, number3 = 16, number4 = 27, number5 = 11, number6 = 33
+            avg = (number1 + number2 + number3 + number4 + number5 + number6) / 6
+            alert(avg)
+        }
+
+        var a1 = average1(10, 30, 40, 20, 33, 42)
+        alert(a1)
+        var a2 = average2()
+        alert(a2)
+        average3(11, 34, 46, 22, 39, 46)
+        average4()
+
     </script>
 </body>
 

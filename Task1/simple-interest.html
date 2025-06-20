@@ -7,13 +7,39 @@
 
 <body>
     <script>
-        function SimpleInterest(principalamount, time, rateofinterest) {
-            var simpleinterest;
-            simpleinterest = (principalamount * time * rateofinterest) / 100
-            alert(simpleinterest)
+        // with parameters and with return value
+        function simpleInterest1(principalAmount, time, rateOfInterest) {
+            var interest = (principalAmount * time * rateOfInterest) / 100
+            return interest
         }
-        SimpleInterest(2200, 1, 1.5)
-        SimpleInterest(33500,2.5,2)
+
+        // without parameters and with return value
+        function simpleInterest2() {
+            var principalAmount = 34000, time = 2.5, rateOfInterest = 1.5, interest
+            interest = (principalAmount * time * rateOfInterest) / 100
+            return interest
+        }
+
+        // with parameters and without return value
+        function simpleInterest3(principalAmount, time, rateOfInterest) {
+            var interest = (principalAmount * time * rateOfInterest) / 100
+            alert(interest)
+        }
+
+        // without parameters and without return value
+        function simpleInterest4() {
+            var principalAmount = 4000, time = 2.5, rateOfInterest = 3, interest
+            interest = (principalAmount * time * rateOfInterest) / 100
+            alert(interest)
+        }
+
+        var i1 = simpleInterest1(2200, 1, 1.5)
+        alert(i1)
+        var i2 = simpleInterest2()
+        alert(i2)
+        simpleInterest3(4500, 1, 2)
+        simpleInterest4()
+
     </script>
 </body>
 
