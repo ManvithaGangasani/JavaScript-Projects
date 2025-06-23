@@ -8,26 +8,26 @@
 <body>
     <script>
         // with parameters and with return value
-        function average1(number1, number2, number3) {
+        let average1 = function (number1, number2, number3) {
             var avg = (number1 + number2 + number3) / 3
             return avg
         }
 
         // without parameters and with return value
-        function average2() {
+        let average2 = function () {
             var number1 = 12, number2 = 22, number3 = 15
             avg = (number1 + number2 + number3) / 3
             return avg
         }
 
         // with parameters and without return value
-        function average3(number1, number2, number3) {
+        let average3 = function (number1, number2, number3) {
             var avg = (number1 + number2 + number3) / 3
             alert(avg)
         }
 
         // without parameters and without return value
-        function average4() {
+        let average4 = function () {
             var number1 = 15, number2 = 25, number3 = 16,
                 avg = (number1 + number2 + number3) / 3
             alert(avg)

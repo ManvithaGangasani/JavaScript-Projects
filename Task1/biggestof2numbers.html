@@ -8,26 +8,26 @@
 <body>
     <script>
         //with parameters and with return value
-        function biggestOfTwoNumbers1(number1, number2) {
+        let biggestOfTwoNumbers1 = function(number1, number2) {
             var biggest = (number1 > number2) ? number1 : number2;
             return biggest
         }
 
         //without parameters and with return value
-        function biggestOfTwoNumbers2() {
+        let biggestOfTwoNumbers2 = function() {
             var number1 = 34, number2 = 12, biggest
             biggest = (number1 > number2) ? number1 : number2;
             return biggest
         }
 
         //with parameters and without return value
-        function biggestOfTwoNumbers3(number1, number2) {
+        let biggestOfTwoNumbers3 = function(number1, number2) {
             var biggest = (number1 > number2) ? number1 : number2;
             alert(biggest)
         }
 
         //without parameters and without return value
-        function biggestOfTwoNumbers4() {
+        let biggestOfTwoNumbers4 = function() {
             var number1 = 10, number2 = 12, biggest
             biggest = (number1 > number2) ? number1 : number2;
             alert(biggest)

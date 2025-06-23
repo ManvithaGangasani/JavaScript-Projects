@@ -8,26 +8,26 @@
 <body>
     <script>
         // with parameters and with return value
-        function simpleInterest1(principalAmount, time, rateOfInterest) {
+        let simpleInterest1 = function (principalAmount, time, rateOfInterest) {
             var interest = (principalAmount * time * rateOfInterest) / 100
             return interest
         }
 
         // without parameters and with return value
-        function simpleInterest2() {
+        let simpleInterest2 = function () {
             var principalAmount = 34000, time = 2.5, rateOfInterest = 1.5, interest
             interest = (principalAmount * time * rateOfInterest) / 100
             return interest
         }
 
         // with parameters and without return value
-        function simpleInterest3(principalAmount, time, rateOfInterest) {
+        let simpleInterest3 = function (principalAmount, time, rateOfInterest) {
             var interest = (principalAmount * time * rateOfInterest) / 100
             alert(interest)
         }
 
         // without parameters and without return value
-        function simpleInterest4() {
+        let simpleInterest4 = function () {
             var principalAmount = 4000, time = 2.5, rateOfInterest = 3, interest
             interest = (principalAmount * time * rateOfInterest) / 100
             alert(interest)

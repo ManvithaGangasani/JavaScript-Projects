@@ -8,26 +8,26 @@
 <body>
     <script>
         // with parameters and with return value
-        function aPlusBWholeSquare1(a, b) {
+        let aPlusBWholeSquare1 = function (a, b) {
             var wholeSquare = a * a + b * b + 2 * a * b;
             return wholeSquare
         }
 
         // without parameters and with return value
-        function aPlusBWholeSquare2() {
+        let aPlusBWholeSquare2 = function () {
             var a = 4, b = 2, wholeSquare
             wholeSquare = a * a + b * b + 2 * a * b;
             return wholeSquare
         }
 
         // with parameters and without return value
-        function aPlusBWholeSquare3(a, b) {
+        let aPlusBWholeSquare3 = function (a, b) {
             var wholeSquare = a * a + b * b + 2 * a * b;
             alert(wholeSquare)
         }
 
         // without parameters and without return value
-        function aPlusBWholeSquare4() {
+        let aPlusBWholeSquare4 = function () {
             var a = 2.3, b = 4, wholeSquare
             wholeSquare = a * a + b * b + 2 * a * b;
             alert(wholeSquare)

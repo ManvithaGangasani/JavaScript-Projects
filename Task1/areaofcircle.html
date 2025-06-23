@@ -8,13 +8,13 @@
 <body>
     <script>
         // with parameters and with return value
-        function areaOfCircle1(radius) {
+        let areaOfCircle1 = function (radius) {
             const pi = 3.141
             var area = pi * radius ** 2
             return area
         }
         // without parameters and with return value
-        function areaOfCircle2() {
+        let areaOfCircle2 = function () {
             var radius = 9, area
             const pi = 3.141
             area = pi * radius ** 2
@@ -22,14 +22,14 @@
         }
 
         // with parameters and without return value
-        function areaOfCircle3(radius) {
+        let areaOfCircle3 = function (radius) {
             const pi = 3.141
             var area = pi * radius ** 2
             alert(area)
         }
 
         // without parameters and without return value
-        function areaOfCircle4() {
+        let areaOfCircle4 = function () {
             var radius = 13.4, area
             const pi = 3.141
             area = pi * radius ** 2
