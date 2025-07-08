@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Events</title>
+</head>
+
+<style>
+    body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .A {
+        padding: 15px;
+        border: 2px solid gray;
+        border-radius: 10px;
+        text-align: center;
+        background-color: skyblue;
+        max-width: 500px;
+        box-sizing: border-box;
+    }
+
+    #no1,
+    #no2 {
+
+        border: 2px solid black;
+        width: 40%;
+        padding: 15px;
+        font-size: 15px;
+        border-radius: 10px;
+    }
+
+    h1 {
+        margin-top: 0px;
+    }
+
+    #id1,
+    #id2,
+    #id3,
+    #id4 {
+        width: 90px;
+        height: 50px;
+        border: 2px solid black;
+        border-radius: 10px;
+        margin: 20px 7px 10px 7px;
+        font-size: 20px;
+    }
+
+    #res {
+        margin: 15px auto 0;
+        background-color: white;
+        padding: 10px;
+        font-size: 20px;
+        font-weight: bold;
+        border-radius: 10px;
+        border: 2px solid black;
+        width: 90%;
+    }
+</style>
+
+<script>
+    function getInputs() {
+        let n1 = parseFloat(document.getElementById("no1").value);
+        let n2 = parseFloat(document.getElementById("no2").value);
+        return [n1, n2];
+    }
+
+    function removeInputs() {
+        document.getElementById("no1").value = "";
+        document.getElementById("no2").value = "";
+
+    }
+
+    function addition() {
+        let [n1, n2] = getInputs();
+        document.getElementById("res").innerText = "Result: " + (n1 + n2);
+        removeInputs()
+    }
+
+    function subtraction() {
+        let [n1, n2] = getInputs();
+        document.getElementById("res").innerText = "Result: " + (n1 - n2);
+        removeInputs()
+    }
+
+    function multipication() {
+        let [n1, n2] = getInputs();
+        document.getElementById("res").innerText = "Result: " + (n1 * n2);
+        removeInputs()
+    }
+
+    function division() {
+        let [n1, n2] = getInputs();
+        if (n2 !== 0) {
+            document.getElementById("res").innerText = "Result: " + (n1 / n2);
+            removeInputs()
+        } else {
+            document.getElementById("res").innerText = "Cannot divide by zero";
+            removeInputs()
+        }
+    }
+
+    function mouseEnter(id) {
+        document.getElementById(id).style.backgroundColor = "#e0e0e0";
+    }
+
+    function mouseLeave(id) {
+        document.getElementById(id).style.backgroundColor = "white";
+    }
+</script>
+
+<body>
+    <div class="A">
+        <h1>JavaScript Events</h1>
+        <div class="B">
+            <input type="number" id="no1" placeholder="Enter First Number">
+            <input type="number" id="no2" placeholder="Enter Second Number">
+        </div>
+        <div class="C">
+            <button id="id1" onclick="addition()" onmouseenter="mouseEnter('id1')"
+                onmouseleave="mouseLeave('id1')">ADD</button>
+            <button id="id2" onclick="subtraction()" onmouseenter="mouseEnter('id2')"
+                onmouseleave="mouseLeave('id2')">SUB</button>
+            <button id="id3" onclick="multipication()" onmouseenter="mouseEnter('id3')"
+                onmouseleave="mouseLeave('id3')">MUl</button>
+            <button id="id4" onclick="division()" onmouseenter="mouseEnter('id4')"
+                onmouseleave="mouseLeave('id4')">DIV</button>
+        </div>
+        <div id="res">Result:</div>
+    </div>
+</body>
+
+</html>
